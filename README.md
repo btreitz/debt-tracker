@@ -20,7 +20,16 @@ Users, payments and all contact-relations are stored in an Oracle Database.
 * Oracle SQL
 
 ## The App
-![Video of Registration](/Frontend/src/assets/registration-cropped.gif) * Das ist ein Beispieltext
-<img src="/Frontend/src/assets/registration.gif" alt="Video of Registration" width="500"/>
+<img src="/Frontend/src/assets/registration-cropped.gif" alt="Video of Registration" width="300"/>
+Hier steht eine Beschreibung zum Text.
+<img src="/Frontend/src/assets/login & feed-cropped.gif" alt="Video of Registration" width="300"/>
+Hier steht eine Beschreibung zum Text.
+<img src="/Frontend/src/assets/Add & Delete-contact-cropped.gif" alt="Video of Registration" width="300"/>
+Hier steht eine Beschreibung zum Text.
+<img src="/Frontend/src/assets/Add-payment-cropped.gif" alt="Video of Registration" width="300"/>
+Hier steht eine Beschreibung zum Text.
 
 ## Local set up for development purposes
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
