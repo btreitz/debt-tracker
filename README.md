@@ -28,13 +28,15 @@ Hier steht eine Beschreibung zum Text.
 
 Hier steht eine Beschreibung zum Text.
 
-<img src="/Frontend/src/assets/login & feed-cropped.gif" alt="Video of login & feed" width="300"/>
-___
+<img src="/Frontend/src/assets/login & feed-cropped.gif" alt="Video of login & feed" width="300" align="left"/>
+
+***
+
 Hier steht eine Beschreibung zum Text.
 
 <img src="/Frontend/src/assets/Add & Delete-contact-cropped.gif" alt="Video of delete contact" width="300"/>
 
----
+***
 
 Hier steht eine Beschreibung zum Text.
 
