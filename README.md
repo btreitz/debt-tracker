@@ -24,6 +24,8 @@ Users, payments and all contact-relations are stored in an Oracle Database.
 <img src="/Frontend/src/assets/registration-cropped.gif" alt="Video of Registration" width="300" align="left">
 Hier steht eine Beschreibung zum Text.
 
+<br/>
+
 <img src="/Frontend/src/assets/login & feed-cropped.gif" alt="Video of Registration" width="300" align="left"/>
 Hier steht eine Beschreibung zum Text.
 
