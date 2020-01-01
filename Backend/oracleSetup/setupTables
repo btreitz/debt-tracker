@@ -1,0 +1,28 @@
+CREATE TABLE users (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    username VARCHAR2(50) UNIQUE NOT NULL,
+    email VARCHAR2(50) UNIQUE NOT NULL,
+    password VARCHAR2(60) NOT NULL,
+    reg_date DATE NOT NULL
+);
+
+CREATE TABLE contacts_list (
+    friendship_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    user_id INT NOT NULL,
+    new_contact_id INT NOT NULL,
+    contact_date DATE NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (new_contact_id) REFERENCES users(id)
+);
+
+CREATE TABLE payments (
+    payment_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id_from INT NOT NULL,
+    id_to INT NOT NULL,
+    amount DECIMAL(7,2) NOT NULL,
+    currency VARCHAR2(3) NOT NULL,
+    description VARCHAR2(200),
+    p_date DATE NOT NULL,
+    FOREIGN KEY (id_from) REFERENCES users(id),
+    FOREIGN KEY (id_to) REFERENCES users(id)
+);

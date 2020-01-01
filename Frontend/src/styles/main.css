@@ -1,0 +1,212 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+* {
+  box-sizing: border-box;
+}
+.info-container {
+  position: absolute;
+  width: 100%;
+  top: -200px;
+  transition: 0.5s ease-in;
+}
+.infoShowing {
+  top: 0;
+  transition: 0.5s ease-out;
+}
+.info {
+  width: 80%;
+  font-size: 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color:rgba(0, 0, 0, 0.7);
+}
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Thin", sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: linear-gradient(#034ba8, #222222);
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  height: 8%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-item {
+  fill: white;
+  display: flex;
+  width: 100%;
+  color: white;
+  height: 100%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.nav-item-wrapper {
+  width: 100%;
+}
+svg:active {
+  fill: #034ba8;
+}
+.active {
+  border-top-color: #034ba8;
+  fill: #034ba8;
+}
+.swipe-view {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Chrome Canary */
+  -ms-scroll-snap-type: mandatory; /* IE/Edge */
+  -webkit-overflow-scrolling: touch; /* important for iOS */
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+#view {
+  height: 92%;
+}
+input {
+  border-style: none;
+  width: 80%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color:rgba(0, 0, 0, 0.4);
+  color: white;
+}
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #767c85;
+  border-width: 1px;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+input[type=submit] {
+  font-size: 20px;
+  background-color: #034ba8;
+  margin-top: 11px;
+  transition: 0.4s;
+}
+input[type=radio] {
+  font-size: 15px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  height: auto;
+  width: auto;
+}
+input[type=number] {
+  width: 50%;
+}
+input[type=date] {
+  width: auto;
+}
+input[type=submit]:hover {
+  box-shadow: 0 13px 38px rgba(0,0,0,0.30), 0 15px 20px rgba(0,0,0,0.22);
+}
+.search-input {
+  position: sticky;
+  top: 15px;
+}
+.arrow-back-container {
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+.arrow-back {
+  fill: white;
+}
+.arrow-back:active {
+  fill: #034ba8;
+}
+.modal {
+  background-color: #222222;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 15px 10px;
+}
+.payments-container {
+  width: 100%;
+  padding: 0 20px 0;
+  overflow-y: hidden;
+}
+.all-payments {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  padding: 13px 0;
+  border-bottom-style: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-width: 1px;
+}
+.payment-basic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.accordion-container {
+  opacity: 0;
+  max-height: 0;
+  font-size: 15px;
+  text-align: justify;
+  visibility: hidden;
+  padding-left: 37px;
+}
+.opened {
+  max-height: 150px;
+  opacity: 1;
+  transition: 0.8s;
+  visibility: visible;
+}
+.opened1 {
+  d: path("m17.344 12.988-3.9422-3.9422c-0.18508-0.18508-0.18508-0.48309 0-0.66817 0.18508-0.18508 0.48309-0.18508 0.66817-2e-7l3.9422 3.9422c0.18508 0.18508 0.18508 0.48309 1e-6 0.66817-0.18508 0.18508-0.48309 0.18508-0.66818 0z");
+  transition: 0.3s ease-in;
+}
+.opened2 {
+  d: path("m14.07 9.046-3.9422 3.9422c-0.18508 0.18508-0.48309 0.18508-0.66817 0-0.18508-0.18508-0.18508-0.48309 2e-7 -0.66817l3.9422-3.9422c0.18508-0.18508 0.48309-0.18508 0.66817-2e-7 0.18508 0.18508 0.18508 0.48309 0 0.66817z");
+  transition: 0.3s ease-in;
+}
+.paths {
+  transition: 0.3s ease-out;
+}
+.lastPayment {
+  border-bottom-style: none;
+}
+.pay {
+  color: rgb(222, 0, 0);
+}
+.receive {
+  color: rgb(0, 200, 0);
+}
