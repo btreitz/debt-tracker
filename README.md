@@ -21,5 +21,6 @@ Users, payments and all contact-relations are stored in an Oracle Database.
 
 ## The App
 ![Video of Registration](/Frontend/src/assets/registration.gif)
+<img src="/Frontend/src/assets/registration.gif" alt="Video of Registration" width="200"/>
 
 ## Local set up for development purposes
