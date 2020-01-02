@@ -1,4 +1,4 @@
-# Fullstack Debt-Tracker
+# Full-Stack Debt-Tracker
 Demo Full-Stack WebApp with Node.js, Vue.js, Oracle SQL, Express.js, Passport.js with user registration and login to track payments to and from personal contacts.
 
 _Currently only for mobile use, Frontend is not optimized for desktop use_
