@@ -1,4 +1,4 @@
-# Fullstack-debtTracker
+# Fullstack Debt-Tracker
 Demo Full-Stack WebApp with Node.js, Vue.js, Oracle SQL, Express.js, Passport.js with user registration and login to track payments to and from personal contacts.
 
 _Currently only for mobile use, Frontend is not optimized for desktop use_
@@ -19,7 +19,7 @@ Users, payments and all contact-relations are stored in an Oracle Database.
 * Passport.js
 * Oracle SQL
 
-## Functionalities
+## Features
 Data from the registration is validated at the backend.
 If everything is correct, the password is hashed with *bcrypt* and a new user is inserted into the database. Now the user can login.
 In case of any errors, the frontend is notified.
@@ -58,8 +58,8 @@ After the new payment is inserted into the database, the modal closes and the ne
 ## Local set up for development purposes
 1. Clone repo `git clone https://github.com/btreitz/Fullstack-debtTracker.git`
 2. The following must be installed:
-  * [Node.js](https://nodejs.org/en/) (includes npm)
-  * An Oracle Database like [Oracle Database XE](https://www.oracle.com/database/technologies/appdev/xe.html)
+    * [Node.js](https://nodejs.org/en/) (includes npm)
+    * An Oracle Database like [Oracle Database XE](https://www.oracle.com/database/technologies/appdev/xe.html)
 3. Create your own Oracle Database
 4. Execute all SQL-Statements in [`setupTables.sql`](https://github.com/btreitz/Fullstack-debtTracker/blob/master/Backend/oracleSetup/setupTables) (and optionally in [`setupInsert.sql`](https://github.com/btreitz/Fullstack-debtTracker/blob/master/Backend/oracleSetup/setupTables)) in your SQL development environment
 5. Enter the connection-information and credentials in [`db_config.js`](https://github.com/btreitz/Fullstack-debtTracker/blob/master/Backend/config/db_config.js) according to your database
