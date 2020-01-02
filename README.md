@@ -56,6 +56,11 @@ After the new payment is inserted into the database, the modal closes and the ne
 <img src="/Frontend/src/assets/Add-payment-cropped.gif" alt="Video of add payment" width="300"/>
 
 ## Local set up for development purposes
+1. The following must be installed:
+ * [Node.js](https://nodejs.org/en/)
+ * An Oracle Database like [Oracle Database XE](https://www.oracle.com/database/technologies/appdev/xe.html)
+2. Create your own Oracle Database
+3. Execute all SQL-Statements in [`insertTables.sql`](https://github.com/btreitz/Fullstack-debtTracker/blob/master/Backend/oracleSetup/setupTables) in your SQL development environment.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
